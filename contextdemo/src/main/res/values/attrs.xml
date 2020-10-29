@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--    <declare-styleable name="canvas" >-->
+
+        <attr name="lll" format="string"/>
+        <attr name="rrr" format="string"/>
+<!--    </declare-styleable>-->
+</resources>

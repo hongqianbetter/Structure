@@ -1,0 +1,5 @@
+include ':skinlibrary'
+include ':contextdemo'
+include ':skinapk'
+include ':skinapp'
+rootProject.name = "Structure"

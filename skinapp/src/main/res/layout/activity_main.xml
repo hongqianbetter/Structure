@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <android.widget.TextView
+
+        android:layout_marginTop="200dp"
+        android:text="@string/app_title"
+        android:textSize="33dp"
+        android:textColor="@color/app_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:background="@mipmap/app_icon"
+        android:layout_height="100dp"/>
+
+    <Button
+        skinTypeface="@string/typeface"
+        android:layout_marginTop="50dp"
+        android:onClick="replace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换肤"
+        tools:ignore="MissingPrefix" />
+
+    <fragment
+        android:tag="lll"
+        android:name="com.example.structure.SkinFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">skinApk</string>
+
+
+    <string name="app_title">皮肤包</string>
+
+    <string name="typeface">font/font.TTF</string>
+    <string name="typeface2"/>
+</resources>
