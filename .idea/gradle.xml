@@ -11,10 +11,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/contextdemo" />
-            <option value="$PROJECT_DIR$/skinapk" />
-            <option value="$PROJECT_DIR$/skinapp" />
-            <option value="$PROJECT_DIR$/skinlibrary" />
+            <option value="$PROJECT_DIR$/objsql" />
+            <option value="$PROJECT_DIR$/skinDemo/dayNightSkin" />
+            <option value="$PROJECT_DIR$/skinDemo/skinapk" />
+            <option value="$PROJECT_DIR$/skinDemo/skinapp" />
+            <option value="$PROJECT_DIR$/skinDemo/skinlibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

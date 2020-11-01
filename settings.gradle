@@ -1,5 +1,15 @@
+include ':objsql'
+
+String skinDemo = "skinDemo/"
+
 include ':skinlibrary'
-include ':contextdemo'
+project(':skinlibrary').projectDir = new File(skinDemo + "skinlibrary")
 include ':skinapk'
+project(':skinapk').projectDir = new File(skinDemo + "skinapk")
 include ':skinapp'
+project(':skinapp').projectDir = new File(skinDemo + "skinapp")
+include ':dayNightSkin'
+project(':dayNightSkin').projectDir = new File(skinDemo + "dayNightSkin")
+
+
 rootProject.name = "Structure"
