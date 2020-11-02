@@ -4,36 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_id"
+            android:hint="id"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:hint="ed_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/ed_age"
+            android:hint="年龄"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add" />
-    <Button
-        android:onClick="delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="delete" />
-    <Button
-        android:onClick="query"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="query" />
-    <Button
-        android:onClick="update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="update" />
+        android:text="添加" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="删除" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="query"
+        android:text="查询" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="update"
+        android:text="更新" />
 
 
 </LinearLayout>

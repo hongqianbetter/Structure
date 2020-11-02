@@ -2,6 +2,7 @@ package com.example.objsql.db;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
+import android.util.Log;
 
 import java.io.File;
 
@@ -39,7 +40,7 @@ public class BaseDaoFactory {
             baseDao=BaseDao.class.newInstance();
             baseDao.init(database,entityClass);
         }catch (Exception e){
-
+            Log.e("SSS",e.getMessage());
         }
         return baseDao;
     }
