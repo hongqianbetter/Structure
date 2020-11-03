@@ -36,7 +36,7 @@ public class BaseDao<T> implements IBaseDao<T> {
     //标记用来表示是否做过初始化操作
     private boolean isInit;
 
-    protected void init(SQLiteDatabase database, Class<T> entityClass) {
+    public void init(SQLiteDatabase database, Class<T> entityClass) {
         this.database = database;
         this.entityClass = entityClass;
 
@@ -129,8 +129,6 @@ public class BaseDao<T> implements IBaseDao<T> {
                     buffer.append(field.getName() + "DOUBLE,");
                 } else if (type == byte[].class) {
                     buffer.append(field.getName() + "BLOB,");
-                } else if (type == Boolean.class) {
-                    buffer.append(field.getName() + "BOOLEAN,");
                 } else {
                     //不支持的类型
                     continue;
@@ -201,7 +199,7 @@ public class BaseDao<T> implements IBaseDao<T> {
                     key = next.getName();
                 }
 
-                if(!TextUtils.isEmpty(key) && !TextUtils.isEmpty(value)){
+                if (!TextUtils.isEmpty(key) && !TextUtils.isEmpty(value)) {
                     map.put(key, value);
                 }
 
@@ -286,7 +284,6 @@ public class BaseDao<T> implements IBaseDao<T> {
         return getQueryResult(query, where);
 
     }
-
 
 
     private List<T> getQueryResult(Cursor query, T where) {

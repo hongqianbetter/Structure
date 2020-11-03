@@ -1,0 +1,25 @@
+ext {
+
+    //false 组件模式
+    //true 集成模式
+
+    isModule = false
+
+    android = [
+            buildTools      : '30.0.2',
+            minSdkVersion   : 19,
+            targetSdkVersion: 30,
+            api             : 30
+
+    ]
+
+    appId = ["m1": "com.example.m1",
+             "m2": "com.example.m2",
+             "routerdemo": "com.example.routerdemo",
+             "daynight": "com.example.daynight",
+             "skinapk": "com.example.skinapk",
+             "structure": "com.example.structure",
+
+    ]
+
+}

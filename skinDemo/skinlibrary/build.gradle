@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
-
+def cfg = rootProject.ext.android
 android {
-    compileSdkVersion gradle.ext.api
-    buildToolsVersion gradle.ext.buildTools
+    compileSdkVersion cfg.api
+    buildToolsVersion cfg.buildTools
 
     defaultConfig {
-        minSdkVersion gradle.ext.minSdkVersion
-        targetSdkVersion gradle.ext.targetSdkVersion
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
         versionCode 1
         versionName "1.0"
 

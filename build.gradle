@@ -1,4 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+//相当于引入头文件 将config中的内容引入进来
+apply from: "config.gradle"
+
+
+
 buildscript {
     repositories {
         google()

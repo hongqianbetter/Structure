@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
-
+def cfg = rootProject.ext.android
+def appId = rootProject.ext.appId
 android {
-    compileSdkVersion gradle.ext.api
-    buildToolsVersion gradle.ext.buildTools
+    compileSdkVersion cfg.api
+    buildToolsVersion cfg.buildTools
 
     defaultConfig {
-        applicationId "com.example.contextdemo"
-        minSdkVersion gradle.ext.minSdkVersion
-        targetSdkVersion gradle.ext.targetSdkVersion
+        applicationId appId["daynight"]
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -20,7 +21,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -31,6 +31,7 @@ android {
             assets.srcDirs = ['assets']
         }
     }
+
 
 }
 

@@ -12,6 +12,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/objsql" />
+            <option value="$PROJECT_DIR$/router/base" />
+            <option value="$PROJECT_DIR$/router/m1" />
+            <option value="$PROJECT_DIR$/router/m2" />
+            <option value="$PROJECT_DIR$/router/router_annotation" />
+            <option value="$PROJECT_DIR$/router/router_compiler" />
+            <option value="$PROJECT_DIR$/router/router_core" />
+            <option value="$PROJECT_DIR$/router/routerdemo" />
             <option value="$PROJECT_DIR$/skinDemo/dayNightSkin" />
             <option value="$PROJECT_DIR$/skinDemo/skinapk" />
             <option value="$PROJECT_DIR$/skinDemo/skinapp" />

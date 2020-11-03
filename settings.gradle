@@ -1,7 +1,7 @@
 include ':objsql'
 
-String skinDemo = "skinDemo/"
 
+String skinDemo = "skinDemo/"
 include ':skinlibrary'
 project(':skinlibrary').projectDir = new File(skinDemo + "skinlibrary")
 include ':skinapk'
@@ -11,5 +11,20 @@ project(':skinapp').projectDir = new File(skinDemo + "skinapp")
 include ':dayNightSkin'
 project(':dayNightSkin').projectDir = new File(skinDemo + "dayNightSkin")
 
+String routerDemo = "router/"
+include ':routerdemo'
+project(':routerdemo').projectDir = new File(routerDemo + "routerdemo")
+include ':router_annotation'
+project(':router_annotation').projectDir = new File(routerDemo + "router_annotation")
+include ':router_compiler'
+project(':router_compiler').projectDir = new File(routerDemo + "router_compiler")
+include ':m1'
+project(':m1').projectDir = new File(routerDemo + "m1")
+include ':m2'
+project(':m2').projectDir = new File(routerDemo + "m2")
+include ':base'
+project(':base').projectDir = new File(routerDemo + "base")
+include ':router_core'
+project(':router_core').projectDir = new File(routerDemo + "router_core")
 
 rootProject.name = "Structure"

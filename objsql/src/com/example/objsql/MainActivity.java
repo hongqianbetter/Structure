@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.objsql.bean.User;
 import com.example.objsql.db.BaseDao;
 import com.example.objsql.db.BaseDaoFactory;
+import com.example.objsql.db.BaseDaoImpl;
 
 import java.util.List;
 
@@ -48,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public User getUser() {
-        User user = new User();
-        int _id = Integer.parseInt(ed_id.getText().toString().trim());
-        user.setId(_id);
-        String _name = this.ed_name.getText().toString().trim();
-        user.setName(_name);
-        int _age = Integer.parseInt(this.ed_age.getText().toString().trim());
-        user.setAge(_age);
-        return user;
+//        User user = new User();
+//        int _id = Integer.parseInt(ed_id.getText().toString().trim());
+//        user.setId(_id);
+//        String _name = this.ed_name.getText().toString().trim();
+//        user.setName(_name);
+//        int _age = Integer.parseInt(this.ed_age.getText().toString().trim());
+//        user.setAge(_age);
+        return null;
     }
 
     //sqlite3 xx.db 进入数据库
@@ -63,38 +64,41 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void add(View view) {
-
-
-        BaseDao<User> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
-        User user = getUser();
-        long insert = baseDao.insert(user);
-        Toast.makeText(MainActivity.this, insert + "---", Toast.LENGTH_SHORT).show();
+//
+//
+//        BaseDao<User> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
+//        User user = getUser();
+//        long insert = baseDao.insert(user);
+//        Toast.makeText(MainActivity.this, insert + "---", Toast.LENGTH_SHORT).show();
 
     }
 
     public void delete(View view) {
-        BaseDao<User> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
-        User user = new User();
-        user.setId(getUser().getId());
-        baseDao.delete(user);
+//        BaseDao<User> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
+//        User user = new User();
+//        user.setId(getUser().getId());
+//        baseDao.delete(user);
     }
 
     public void query(View view) {
-        BaseDao<User> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
-
-        User where = new User();
-        where.setId(getUser().getId());
-        List<User> query = baseDao.query(where);
-        content.setText(query.toString());
+//        BaseDao<User> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
+//
+//        User where = new User();
+//        where.setId(getUser().getId());
+//        List<User> query = baseDao.query(where);
+//        content.setText(query.toString());
 
     }
 
     public void update(View view) {
-        BaseDao<Object> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
-        User user = new User(getUser().getId(), "PPP", 98);
-        User where = new User();
-        where.setId(getUser().getId());
-        baseDao.update(user, where);
+
+//        BaseDao<Object> baseDao = BaseDaoFactory.getInstance().getBaseDao(BaseDaoImpl.class,User.class);
+
+//        BaseDao<Object> baseDao = BaseDaoFactory.getInstance().getBaseDao(User.class);
+//        User user = new User(getUser().getId(), "PPP", 98);
+//        User where = new User();
+//        where.setId(getUser().getId());
+//        baseDao.update(user, where);
     }
 
 
