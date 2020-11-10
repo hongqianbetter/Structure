@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 def cfg = rootProject.ext.android
-def appId = rootProject.ext.appId
 android {
     compileSdkVersion cfg.api
     buildToolsVersion cfg.buildTools

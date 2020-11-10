@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         if (!isModule){
-            applicationId appId["m2"]
+            applicationId appId['m2']
         }
         minSdkVersion cfg.minSdkVersion
         targetSdkVersion cfg.targetSdkVersion

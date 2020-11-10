@@ -13,13 +13,13 @@ ext {
 
     ]
 
-    appId = ["m1": "com.example.m1",
-             "m2": "com.example.m2",
+    appId = ["m1"        : "com.example.m1",
+             "m2"        : "com.example.m2",
              "routerdemo": "com.example.routerdemo",
-             "daynight": "com.example.daynight",
-             "skinapk": "com.example.skinapk",
-             "structure": "com.example.structure",
-
+             "daynight"  : "com.example.daynight",
+             "skinapk"   : "com.example.skinapk",
+             "structure" : "com.example.structure",
+             "java_poet" : "com.example.java_poet"
     ]
 
 }

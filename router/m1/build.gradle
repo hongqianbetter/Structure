@@ -11,7 +11,7 @@ android {
     buildToolsVersion cfg.buildTools
 
     defaultConfig {
-        applicationId appId["m1"]
+        applicationId appId['m1']
         minSdkVersion cfg.minSdkVersion
         targetSdkVersion cfg.targetSdkVersion
         versionCode 1

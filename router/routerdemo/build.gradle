@@ -8,7 +8,7 @@ android {
     buildToolsVersion cfg.buildTools
 
     defaultConfig {
-        applicationId appId["routerdemo"]
+        applicationId appId['routerdemo']
         minSdkVersion cfg.minSdkVersion
         targetSdkVersion cfg.targetSdkVersion
         versionCode 1

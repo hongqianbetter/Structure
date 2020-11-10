@@ -20,56 +20,19 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-//        Log.e("DDD",getBaseContext().toString()+"  app baseContext");
-//        Log.e("DDD",this.toString()+"  app ");
 
-        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
-            @Override
-            public void onActivityCreated(@NonNull Activity activity, @Nullable Bundle savedInstanceState) {
-                 stack.add(activity);
-            }
-
-            @Override
-            public void onActivityStarted(@NonNull Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityResumed(@NonNull Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityPaused(@NonNull Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityStopped(@NonNull Activity activity) {
-
-            }
-
-            @Override
-            public void onActivitySaveInstanceState(@NonNull Activity activity, @NonNull Bundle outState) {
-
-            }
-
-            @Override
-            public void onActivityDestroyed(@NonNull Activity activity) {
-                      stack.remove(activity);
-            }
-        });
+        registerActivityLifecycleCallbacks(new ActivityLifeCircle(stack));
     }
 
 
-    public void notifyA(){
-        for (int i=0;i<stack.size();i++){
-            Activity activity = stack.get(i);
-            if(activity instanceof com.example.daynight.SecondActiviy) {
-                ((com.example.daynight.SecondActiviy)activity).update();
-            }
-        }
-    }
+//    public void notifyA(){
+//        for (int i=0;i<stack.size();i++){
+//            Activity activity = stack.get(i);
+//            if(activity instanceof com.example.daynight.SecondActiviy) {
+//                ((com.example.daynight.SecondActiviy)activity).update();
+//            }
+//        }
+//    }
 
     
 }

@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import com.example.router_annotation.Route;
 
-import java.net.PasswordAuthentication;
 
 
 @Route(path = "/main/MainActivity" )
